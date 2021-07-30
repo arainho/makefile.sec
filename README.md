@@ -35,7 +35,7 @@ Next, we have dedicated entries for all the security tests available.
 
 ## Let's pipeline it!
 
-Next, we have dedicated entries for CI-CI pipelines definitions available.
+Next, we have entries for CI-CI pipelines definitions available.
 
 | Name | Instructions Status |
 | ---- | ------------------- |
