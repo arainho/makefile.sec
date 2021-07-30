@@ -1,17 +1,30 @@
 
 SHELL = /bin/bash
 
-# variables
+
+# VARIABLES
 RESULTS_FOLDER ?= "results/"
 
+## secret detection
 TRUFFLEHOG_ENTROPY ?= False
 TRUFFLEHOG_RESULTS ?= $(RESULTS_FOLDER)
 TRUFFLEHOG_REPORT ?= trufflehog_report.json
-
 SHHGIT_RESULTS ?= $(RESULTS_FOLDER)
 SHHGIT_CONFIG_FILE ?= "config.yaml"
 
-# 1. SECRET DETECTION
+## container scanning
+REGISTRY ?= docker.io
+IMAGE_NAME ?= alpine
+IMAGE_TAG ?= latest
+
+
+# CONTAINER SCANNING
+container_scanning: audit_grype
+
+audit_grype:
+	${GRYPE} -f critical ${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
+
+# SECRET DETECTION
 secret_detection: audit_trufflehog audit_shhgit
 
 audit_trufflehog:
