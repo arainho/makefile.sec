@@ -1,7 +1,5 @@
-## Infrastructure as Code (IaC) resources
-
-### IaC scanning
-To run Infrastructure as Code scanning tools, do:
+## IaC scanning
+To run Infrastructure as Code (IaC) scanning tools, do:
 ```
 make iac_scanning
 ```
