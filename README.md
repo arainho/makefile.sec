@@ -18,7 +18,9 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 make secret_detection
 ```
 
-## Container scanning
+## Notes
+
+### Container scanning
 To run container scanning tools, do:
 ```
 make container_scanning
