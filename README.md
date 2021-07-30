@@ -1,6 +1,6 @@
 # ci-sec
-Repository with tools, resources, and guidelines to enable security tests into CI/CD pipelines. 
-The purpose is to shift-left by injecting the security processes earlier on Software Development Lyfe-Cycle (SLDC).
+Repository with tools, resources, and guidelines to enable security tests into CI/CD pipelines.   
+The purpose is to shift-left by injecting the security processes earlier on Software Development Lyfe-Cycle (SLDC). 
 
 ### Requirements
 - [macOS](https://www.apple.com/macos/), [Linux](https://www.linux.org/)
