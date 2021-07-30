@@ -2,8 +2,6 @@
 Repository with tools, resources, and guidelines to enable security tests into CI/CD pipelines. 
 The purpose is to guide and improve security process shifting left on Software Development Lyfe-Cycle(SLDC).
 
-## Run it now!
-
 ### Requirements
 - [Docker](https://docs.docker.com/engine/install/)
 - [jq](https://stedolan.github.io/jq/download/)
@@ -18,9 +16,9 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 make secret_detection
 ```
 
-## Details
+## Run it now!
 
-Next, we have dedicated entries for the security tests available.
+Next, we have dedicated entries for all the security tests available.
 
 | Name | Status |
 | ---- | ------ |
