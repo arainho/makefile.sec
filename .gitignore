@@ -3,7 +3,6 @@ results/
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,git,vim,emacs,sublimetext,visualstudiocode,intellij+all,python,go,virtualenv,venv
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,git,vim,emacs,sublimetext,visualstudiocode,intellij+all,python,go,virtualenv,venv
 
 ### Emacs ###
 # -*- mode: gitignore; -*-
