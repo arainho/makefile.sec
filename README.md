@@ -37,13 +37,13 @@ Next, we have dedicated entries for all the security tests available.
 
 Next, we have entries for CI-CI pipelines definitions available.
 
-| Name | Instructions Status |
-| ---- | ------------------- |
-| [Buildkite](cicd/buildkite.md)| -- |
-| [GitHub](cicd/github.md) | in progress |
-| [GitLab](cicd/gitlab.md) | -- |
-| [Go-CD](cicd/gocd.md) | -- |
-| [Jenkins](cicd/jenkins.md) | -- |
+| CI/CD system | Instructions Status |
+| ------------ | ------------------- |
+| [Buildkite](ci-cd/buildkite.md)| -- |
+| [GitHub](ci-cd/github.md) | in progress |
+| [GitLab](ci-cd/gitlab.md) | -- |
+| [Go-CD](ci-cd/gocd.md) | -- |
+| [Jenkins](ci-cd/jenkins.md) | -- |
 | | |
 
 Tables legend:
