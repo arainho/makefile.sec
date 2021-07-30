@@ -19,8 +19,6 @@ make secret_detection
 ## Run it now!
 
 Next, we have dedicated entries for all the security tests available.
-The `Makefile entry` indicates whether there is an entry for the specified test (yes) or not (--).
-The `Instructions status` indicates whether there is an entry for the test (in progress) or is empty (--).
 
 | Name | Makefile entry | Instructions Status |
 | ---- | --------------- | ------------------- |
@@ -32,3 +30,7 @@ The `Instructions status` indicates whether there is an entry for the test (in p
 | [SAST](sast/analysis.md) | -- | -- |
 | [Secret detection](secret/detection.md) | yes | in progress |
 | | |
+
+Table legend:
+- `Makefile entry` indicates whether there is an entry for the specified test (yes) or not (--).
+- `Instructions status` indicates whether there is an entry for the test (in progress) or is empty (--).
