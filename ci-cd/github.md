@@ -6,11 +6,11 @@ More detailed instructions are available on [quickstart](https://docs.github.com
 0. Create required the folder
 ```bash
 cd path/to/repository
-mkidr -- .github/workflows/
+mkdir -- .github/workflows/
 ```
 
 
-1. Download the Makefile to your source code folder `path/to/repository`
+1. Download the Makefile to the source code folder `path/to/repository.`
 ```bash
 curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 ```
@@ -20,7 +20,7 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 vi .github/workflows/ci-sec.yml
 ```
 
-3. Ajust and add customized content to `ci-sec.yml`
+3. Adjust and add customized content to `ci-sec.yml`
 ```
 name: SecretDetection Actions Demo
 on: [push]
