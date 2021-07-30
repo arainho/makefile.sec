@@ -5,6 +5,7 @@ More detailed instructions are available on [quickstart](https://docs.github.com
 
 1. Create required the folder
 ```bash
+cd path/to/repo
 mkidr -- .github/workflows/
 ```
 
