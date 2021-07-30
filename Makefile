@@ -41,9 +41,9 @@ audit_trivy: audit_trivy_prepare
 		   ${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
 
 # SAST
-sast: audit_scan
+sast: audit_slscan
 
-audit_scan:
+audit_slscan:
 	cp "./tests/sast_rules.json"  "${AUDIT_DIR}/.sastscanrc"
 	docker run --rm -e "WORKSPACE=${AUDIT_DIR}" -v ${AUDIT_DIR}:/app shiftleft/sast-scan scan --type credscan,depscan,ansible,aws,bash,go,groovy,python,kubernetes,serverless,terraform,vf,vm,yaml --out_dir /app/reports --mode deploy
 	rm -- "${AUDIT_DIR}/.sastscanrc"
