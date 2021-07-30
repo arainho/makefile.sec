@@ -11,13 +11,11 @@ IMAGE_NAME ?= alpine
 IMAGE_TAG ?= latest
 
 ## sast
-AUDIT_DIR ?= RESULTS_FOLDER
+# ...
 
 ## secret detection
 TRUFFLEHOG_ENTROPY ?= False
-TRUFFLEHOG_RESULTS ?= $(RESULTS_FOLDER)
 TRUFFLEHOG_REPORT ?= trufflehog_report.json
-SHHGIT_RESULTS ?= $(RESULTS_FOLDER)
 SHHGIT_CONFIG_FILE ?= "config.yaml"
 
 
@@ -44,9 +42,12 @@ audit_trivy: audit_trivy_prepare
 sast: audit_slscan
 
 audit_slscan:
-	cp "./tests/sast_rules.json"  "$(AUDIT_DIR)/.sastscanrc"
-	docker run --rm -e "WORKSPACE=$(AUDIT_DIR)" -v $(AUDIT_DIR):/app shiftleft/sast-scan scan --type credscan,depscan,ansible,aws,bash,go,groovy,python,kubernetes,serverless,terraform,vf,vm,yaml --out_dir /app/reports --mode deploy
-	rm -- "$(AUDIT_DIR)/.sastscanrc"
+	cp "./tests/sast_rules.json"  "$(RESULTS_FOLDER)/.sastscanrc"
+	docker run --rm -e "WORKSPACE=$(RESULTS_FOLDER)" \
+		   -v $(RESULTS_FOLDER):/app shiftleft/sast-scan scan \
+		   --type credscan,depscan,ansible,aws,bash,go,groovy,python,kubernetes,serverless,terraform,vf,vm,yaml \
+		   --out_dir /app/reports --mode deploy
+	rm -- "$(RESULTS_FOLDER)/.sastscanrc"
 
 # SECRET DETECTION
 secret_detection: audit_trufflehog audit_shhgit
@@ -60,10 +61,10 @@ audit_trufflehog:
        --json \
        --regex \
        --entropy=$(TRUFFLEHOG_ENTROPY) \
-       file:///target | tee trufflehog_report.json | jq -C
+       file:///target | tee $(RESULTS_FOLDER)/trufflehog_report.json | jq -C
  
  audi_shhgit_prepare:
-	rm -f -- "$(PWD)/$(SHHGIT_RESULTS)"
+	rm -f -- "$(PWD)/$(RESULTS_FOLDER)"
 	rm -f -- "$(SHHGIT_CONFIG_FILE)"
 	curl https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml -o "$(SHHGIT_CONFIG_FILE)"
 
@@ -77,4 +78,4 @@ audit_shhgit: audi_shhgit_prepare
 		   -local "/src" \
 		   -config-path /app/ \
 		   -entropy-threshold 0 \
-		   -csv-path "/src/$(SHHGIT_RESULTS)"
+		   -csv-path "/src/$(RESULTS_FOLDER)"
