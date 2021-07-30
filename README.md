@@ -17,7 +17,7 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 make secret_detection
 ```
 
-## Run it now!
+## Run it!
 
 Next, we have dedicated entries for all the security tests available.
 
@@ -33,6 +33,19 @@ Next, we have dedicated entries for all the security tests available.
 | [Secret detection](secret/detection.md) | yes | in progress |
 | | |
 
-Table legend:
+## Let's pipeline it!
+
+Next, we have dedicated entries for CI-CI pipelines definitions available.
+
+| Name | Instructions Status |
+| ---- | ------------------- |
+| [Buildkite](cicd/buildkite.md)| -- |
+| [GitHub](cicd/github.md) | in progress |
+| [GitLab](cicd/gitlab.md) | -- |
+| [Go-CD](cicd/gocd.md) | -- |
+| [Jenkins](cicd/jenkins.md) | -- |
+| | |
+
+Tables legend:
 - `Makefile entry` indicates whether there is an entry for the specified test (yes) or not (--).
 - `Instructions status` indicates whether there is an entry for the test (in progress) or is empty (--).
