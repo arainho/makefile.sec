@@ -25,7 +25,7 @@ Next, we have dedicated entries for all the security tests available.
 | [API scan](api/scan.md) | -- | -- |
 | [Container scanning](container/scanning.md) | -- | in progress |
 | [DAST](dast/analysis.md) | -- | -- |
-| [Dependency scanning](dependency/scanning.md) | -- | -- |
+| [Dependency scanning](dependency/scanning.md) | yes | -- |
 | [IaC scanning](iac/scanning.md) | -- | in progress | 
 | [SAST](sast/analysis.md) | -- | -- |
 | [Secret detection](secret/detection.md) | yes | in progress |
