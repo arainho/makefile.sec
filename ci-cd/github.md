@@ -27,7 +27,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - run: echo "🖥️ The workflow is now ready, running secret detection ⚡"
       - name: Run secret detection
         run: |
           make secret_detection
