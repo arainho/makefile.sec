@@ -2,7 +2,7 @@
 Repository with tools, resources, and guidelines to enable security tests into CI/CD pipelines. 
 The purpose is to guide and improve security process shifting left on Software Development Lyfe-Cycle(SLDC).
 
-## Run it now!
+## Setup
 
 ### Requirements
 - [Docker](https://docs.docker.com/engine/install/)
@@ -18,20 +18,14 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 make secret_detection
 ```
 
-## Notes
+## Run it now!
 
-### Container scanning
-To run container scanning tools, do:
-```
-make container_scanning
-```
+### Security tests available
+Next, we have dedicated entries of each type of test.
 
-To run other tools view [+info](container/scanning.md)
+| Name |
+| ---- |
+| [Container scanning](container/scanning.md) |
+| [IaC scanning](iac/scanning.md) |
+| | |
 
-### IaC scanning
-To run Infrastructure as Code scanning tools, do:
-```
-make iac_scanning
-```
-
-To run other tools view [+info](iac/scanning.md)
