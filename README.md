@@ -3,6 +3,7 @@ Repository with tools, resources, and guidelines to enable security tests into C
 The purpose is to shift-left by injecting the security processes earlier on Software Development Lyfe-Cycle (SLDC).
 
 ### Requirements
+- [macOS](https://www.apple.com/macos/), [Linux](https://www.linux.org/)
 - [Docker](https://docs.docker.com/engine/install/)
 - [jq](https://stedolan.github.io/jq/download/)
 
