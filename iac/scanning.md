@@ -1,5 +1,11 @@
 ## Infrastructure as Code (IaC) resources
 
+### IaC scanning
+To run Infrastructure as Code scanning tools, do:
+```
+make iac_scanning
+```
+
 ### Tools
 | Author | Name | Description |
 | ------ | ---- | ----------- |
