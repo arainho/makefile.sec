@@ -5,7 +5,7 @@ To run container scanning tools, do:
 make container_scanning
 ```
 
-## Tools
+### Tools
 
 We have several options
 1. [Grype](https://github.com/anchore/grype)
