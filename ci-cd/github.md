@@ -3,10 +3,16 @@
 Automate, customize, and execute your software development workflows right in your repository with [GitHub Actions](https://docs.github.com/en/actions).  
 More detailed instructions are available on [quickstart](https://docs.github.com/en/actions/quickstart).
 
-1. Create required the folder
+0. Create required the folder
 ```bash
-cd path/to/repo
+cd path/to/repository
 mkidr -- .github/workflows/
+```
+
+
+1. Download the Makefile to your source code folder `path/to/repository`
+```bash
+curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 ```
 
 2. Create your workflow
