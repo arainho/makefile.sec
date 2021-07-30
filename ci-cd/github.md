@@ -16,10 +16,10 @@ vi .github/workflows/ci-sec.yml
 
 3. Ajust and add customized content to `ci-sec.yml`
 ```
-name: GitHub Actions Demo
+name: SecretDetection Actions Demo
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Run-SecretDetection-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
