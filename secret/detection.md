@@ -8,7 +8,7 @@ We have several options
 trufflehog --json --regex --entropy=False file:///$PWD/ | jq -C
 ```
 
-2. [Trivy](https://github.com/aquasecurity/trivy)
+2. [shhgit](https://github.com/eth0izzle/shhgit)
 ```
 curl -o /tmp/config.yaml https://raw.githubusercontent.com/eth0izzle/shhgit/master/config.yaml
 shhgit -config-path /tmp/ -entropy-threshold 0 -debug -local $PWD/
