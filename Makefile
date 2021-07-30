@@ -19,10 +19,23 @@ IMAGE_TAG ?= latest
 
 
 # CONTAINER SCANNING
-container_scanning: audit_grype
+container_scanning: audit_grype audit_trivy
 
 audit_grype:
 	${GRYPE} -f critical ${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
+
+audit_trivy_prepare: pull_gcr_image
+	docker run \
+		   --rm \
+		   -v /var/run/docker.sock:/var/run/docker.sock \
+		   -v ${HOME}/.cache:/root/.cache/ aquasec/trivy --clear-cache
+
+audit_trivy: audit_trivy_prepare
+	docker run \
+		   --rm \
+		   -v /var/run/docker.sock:/var/run/docker.sock \
+		   -v ${HOME}/.cache:/root/.cache/ aquasec/trivy \
+		   ${REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
 
 # SECRET DETECTION
 secret_detection: audit_trufflehog audit_shhgit
