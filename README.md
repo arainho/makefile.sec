@@ -20,8 +20,8 @@ make secret_detection
 
 Next, we have dedicated entries for all the security tests available.
 
-| Name | Status |
-| ---- | ------ |
+| Name | Instructions Status |
+| ---- | ------------------- |
 | [API scan](api/scan.md) | empty |
 | [Container scanning](container/scanning.md) | in progress |
 | [DAST](dast/analysis.md) |  empty |
