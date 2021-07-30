@@ -28,5 +28,5 @@ Next, we have dedicated entries for all the security tests available.
 | [Dependency scanning](dependency/scanning.md) |  empty |
 | [IaC scanning](iac/scanning.md) | in progress |
 | [SAST](sast/analysis.md) |  empty |
-| [Secret detection](secret/detection.md) |  empty |
+| [Secret detection](secret/detection.md) | in progress |
 | | |
