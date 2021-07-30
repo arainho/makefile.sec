@@ -28,8 +28,8 @@ jobs:
         uses: actions/checkout@v2
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+      - name: Run secret detection
         run: |
-          ls ${{ github.workspace }}
+          make secret_detection
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
