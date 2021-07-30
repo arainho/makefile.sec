@@ -12,7 +12,7 @@ SHHGIT_RESULTS ?= $(RESULTS_FOLDER)
 SHHGIT_CONFIG_FILE ?= "config.yaml"
 
 # 1. SECRET DETECTION
-secret_detection: audit_trufflehog
+secret_detection: audit_trufflehog audit_shhgit
 
 audit_trufflehog:
   docker run \
