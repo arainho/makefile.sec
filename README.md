@@ -27,8 +27,9 @@ Next, we have dedicated entries for all the security tests available.
 | [Container scanning](container/scanning.md) | -- | in progress |
 | [DAST](dast/analysis.md) | -- | -- |
 | [Dependency scanning](dependency/scanning.md) | yes | -- |
-| [IaC scanning](iac/scanning.md) | -- | in progress | 
-| [SAST](sast/analysis.md) | -- | -- |
+| [IaC scanning](iac/scanning.md) | -- | in progress |
+| [Kubernetes scanning](kube/scanning.md) | -- | in progress |
+| [SAST](sast/analysis.md) | yes | in progress |
 | [Secret detection](secret/detection.md) | yes | in progress |
 | | |
 
