@@ -17,3 +17,28 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 ```bash
 vi .gitlab-ci.yml
 ```
+
+3. Adjust and add customized content to `ci-sec.yml`
+```bash
+stages:
+- build
+- test
+- deploy
+
+build-job:
+  stage: build
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+
+test-job1:
+  stage: test
+  script:
+    - echo "This job tests something"
+
+deploy-prod:
+  stage: deploy
+  script:
+    - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
+
+```
+
