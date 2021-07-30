@@ -1,14 +1,14 @@
 # ci-sec
-Tools, resources, and guidelines to enable security tests into CI/CD pipelines. 
+Repository with tools, resources, and guidelines to enable security tests into CI/CD pipelines. 
+The purpose is to guide and improve security process shifting left on Software Development Lyfe-Cycle(SLDC).
 
-## Purpose
-Guide and improve security process shifting left on Software Development Lyfe-Cycle(SLDC).
+## Run it now!
 
-## Requirements
+### Requirements
 - [Docker](https://docs.docker.com/engine/install/)
 - [jq](https://stedolan.github.io/jq/download/)
 
-## General instructions
+### General instructions
 1. Download the Makefile to your source code folder
 ```
 curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
