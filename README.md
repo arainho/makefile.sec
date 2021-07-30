@@ -27,3 +27,11 @@ make container_scanning
 ```
 
 To run other tools view [+info](container/scanning.md)
+
+### IaC scanning
+To run Infrastructure as Code scanning tools, do:
+```
+make iac_scanning
+```
+
+To run other tools view [+info](iac/scanning.md)
