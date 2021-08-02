@@ -39,7 +39,7 @@ Next, we have entries for CI-CI pipelines definitions available.
 
 | CI/CD system | Instructions Status |
 | ------------ | ------------------- |
-| [Buildkite](ci-cd/buildkite.md)| -- |
+| [Buildkite](ci-cd/buildkite.md)| in progress |
 | [GitHub](ci-cd/github.md) | in progress |
 | [GitLab](ci-cd/gitlab.md) | -- |
 | [Go-CD](ci-cd/gocd.md) | -- |
