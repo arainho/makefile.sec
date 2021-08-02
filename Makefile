@@ -25,7 +25,7 @@ container_scanning: audit_grype audit_trivy
 audit_grype:
 	$(GRYPE) -f critical $(REGISTRY)/$(IMAGE_NAME):$(IMAGE_TAG)
 
-audit_trivy_prepare: pull_gcr_image
+audit_trivy_prepare:
 	docker run \
 		   --rm \
 		   -v /var/run/docker.sock:/var/run/docker.sock \
