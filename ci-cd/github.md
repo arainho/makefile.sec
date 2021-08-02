@@ -9,7 +9,6 @@ cd path/to/repository
 mkdir -- .github/workflows/
 ```
 
-
 1. Download the Makefile to the source code folder `path/to/repository.`
 ```bash
 curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
