@@ -24,7 +24,6 @@ curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
 2. Create your workflow
 ```bash
 vi .buildkite/ci-sec.yml
-chmod +x .buildkite/ci-sec.yml
 ```
 
 3. Adjust and add customized content to `ci-sec.yml`
