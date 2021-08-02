@@ -23,7 +23,7 @@ SHHGIT_CONFIG_FILE ?= "config.yaml"
 container_scanning: audit_grype audit_trivy
 
 audit_grype:
-	$(GRYPE) -f critical $(REGISTRY)/$(IMAGE_NAME):$(IMAGE_TAG)
+	$(GRYPE) $(REGISTRY)/$(IMAGE_NAME):$(IMAGE_TAG)
 
 audit_trivy_prepare:
 	docker run \
