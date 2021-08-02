@@ -36,4 +36,8 @@ secrets:
 ```
 
 ### Notes
-You can find other examples on [secureapps-ci](https://gitlab.com/secureapps-ci/samples/repo-supervisor/-/blob/master/SecretsDetection-Integration.gitlab-ci.yml)
+You can find other examples on my repository at GitLab called [secureapps-ci](https://gitlab.com/secureapps-ci/samples).
+- [secret detection](https://gitlab.com/secureapps-ci/samples/repo-supervisor/-/blob/master/SecretsDetection-Integration.gitlab-ci.yml)
+- [sast](https://gitlab.com/secureapps-ci/samples/moneyx/-/blob/master/.gitlab-ci.yml)
+- [dast](https://gitlab.com/secureapps-ci/samples/zap-webgoat/-/blob/master/Security-Analysis.gitlab-ci.yml)
+- [secret detection, sast, external sast](https://gitlab.com/secureapps-ci/samples/hello-shiftleft/-/blob/master/Security-Analysis.gitlab-ci.yml)
