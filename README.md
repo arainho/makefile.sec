@@ -41,7 +41,7 @@ Next, we have entries for CI-CI pipelines definitions available.
 | ------------ | ------------------- |
 | [Buildkite](ci-cd/buildkite.md)| in progress |
 | [GitHub](ci-cd/github.md) | in progress |
-| [GitLab](ci-cd/gitlab.md) | -- |
+| [GitLab](ci-cd/gitlab.md) | in progress |
 | [Go-CD](ci-cd/gocd.md) | -- |
 | [Jenkins](ci-cd/jenkins.md) | -- |
 | | |
