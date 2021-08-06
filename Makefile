@@ -11,7 +11,7 @@ IMAGE_NAME ?= alpine
 IMAGE_TAG ?= latest
 
 ## sast
-# ...
+# SONAR_URL ?= https://sonarcloud.io	# URL for Sonar(Cloud|Qube)
 
 ## secret detection
 TRUFFLEHOG_ENTROPY ?= False
@@ -48,6 +48,15 @@ audit_slscan:
 		   --type credscan,depscan,ansible,aws,bash,go,groovy,python,kubernetes,serverless,terraform,vf,vm,yaml \
 		   --out_dir /app/reports --mode deploy
 	rm -- "$(RESULTS_FOLDER)/.sastscanrc"
+
+audit_sonar:
+	docker run \
+		   --rm \
+		   -e SONAR_LOGIN="$(SONAR_LOGIN)" \
+		   -e SONAR_HOST_URL="http://$(SONAR_URL)" \
+		   -v "${PWD}:/usr/src" \
+		   -v ${HOME}/.sonar/cache:/opt/sonar-scanner/.sonar/cache \
+		   sonarsource/sonar-scanner-cli -Dsonar.verbose=true
 
 # SECRET DETECTION
 secret_detection: audit_trufflehog audit_shhgit
