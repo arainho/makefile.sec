@@ -26,7 +26,7 @@ Next, we have dedicated entries for all the security tests available.
 | [API scan](api/scan.md) | -- | -- |
 | [Container scanning](container/scanning.md) | -- | in progress |
 | [DAST](dast/analysis.md) | -- | -- |
-| [Dependency scanning](dependency/scanning.md) | yes | -- |
+| [Dependency scanning](dependency/scanning.md) | -- | -- |
 | [IaC scanning](iac/scanning.md) | -- | in progress |
 | [Kubernetes scan](kube/scan.md) | -- | in progress |
 | [SAST](sast/analysis.md) | yes | in progress |
