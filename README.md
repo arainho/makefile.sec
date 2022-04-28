@@ -10,11 +10,11 @@ The purpose is to shift-left by injecting the security processes earlier on Soft
 ### General instructions
 1. Download the Makefile to your source code folder
 ```
-curl -o Makefile https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile
+curl -o Makefile.sec https://raw.githubusercontent.com/arainho/ci-sec/main/Makefile.sec
 ```
 2. Run the desired security test 
 ```
-make secret_detection
+make -f Makefile.sec secret_detection
 ```
 
 ## Run it!
