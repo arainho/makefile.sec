@@ -2,9 +2,12 @@
 Repository with tools, resources, and guidelines to enable security tests into CI/CD pipelines.   
 The purpose is to shift-left by injecting the security processes earlier on Software Development Lyfe-Cycle (SLDC). 
 
+`Use 'Makefile.sec + Docker' to run security tests in CI/CD pipelines`
+
 ### Requirements
 - [macOS](https://www.apple.com/macos/), [Linux](https://www.linux.org/)
 - [Docker](https://docs.docker.com/engine/install/)
+- [make](https://savannah.gnu.org/projects/make/)
 - [jq](https://stedolan.github.io/jq/download/)
 
 ### General instructions
